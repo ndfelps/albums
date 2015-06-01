@@ -24,15 +24,43 @@ html {
 .album-label:hover {
 	background-color: lightblue;
 }
-nav a {
+a nav {
 	color: black;
 }
-nav a:hover {
-	text-decoration: none;
+a nav:hover {
 	cursor: default;
+}
+.active {
+	background-color: grey;
 }
 #album-label-container {
 	margin: auto 0;
 	display: table-cell;
 	vertical-align: middle;
+}
+header {
+	height: 80px;
+	padding-top: 20px;
+	background-color: rgb(39, 49, 34);
+	text-align: center;
+	color: white;
+	font-size: 28px;
+}
+img {
+	width: 200px;
+	height: 200px;
+}
+.col-sm-4 {
+	text-align: center;
+	display: table-cell;
+	margin: auto 0;
+	margin-bottom: 60px;
+}
+.con {
+	padding-top: 40px;
+	display: table;
+	position: absolute;
+}
+main section {
+	display: none;
 }

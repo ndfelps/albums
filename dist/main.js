@@ -1,16 +1,21 @@
 $(document).on('ready', start) 
 
 function start() {
-	$('nav a').on('click', tab);
-		function tab(e) {
+	$('a nav').on('click', tab);
+	var $targetSec = $(window.location.hash);
+	if (!$targetSec.length) {
+		$targetSec = $('main section').eq(0);
+	}
+	$targetSec.show();
 
-		}
+	$('a nav[href="#' + $targetSec.attr('id')+'"]').addClass('active');
+
 	function tab(e) {
 		var $target = $(e.target);
 		var targetName = $target.attr('href');
 		$('main section').hide();
 		$(targetName).show();
-		$('nav a').removeClass('active');
+		$('a nav').removeClass('active');
 		$target.addClass('active');
 	}
 }
