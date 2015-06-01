@@ -1,0 +1,38 @@
+html {
+	font-family: sans-serif;
+}
+#sideBar {
+	display: table;
+	position: absolute;
+	width: 200px;
+	height: 100%;
+	background-color: rgb(39, 49, 34);
+}
+.album-label {
+	color: black;
+	background-color: white;
+	border: 2px solid black;
+	font-size: 16px;
+	margin-top: 20px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.album-label:hover {
+	background-color: lightblue;
+}
+nav a {
+	color: black;
+}
+nav a:hover {
+	text-decoration: none;
+	cursor: default;
+}
+#album-label-container {
+	margin: auto 0;
+	display: table-cell;
+	vertical-align: middle;
+}
